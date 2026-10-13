@@ -7,6 +7,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
+import SavedScreen from "../screens/SavedScreen";
 import HomeScreen from "../screens/HomeScreen";
 import TripsScreen from "../screens/TripsScreen";
 import ExploreScreen from "../screens/ExploreScreen";
@@ -61,6 +62,17 @@ function MainTabs() {
         component={ExploreScreen}
         options={{ tabBarLabel: "Explore" }}
       />
+
+      <Tab.Screen
+  name="Saved"
+  component={SavedScreen}
+  options={{
+    tabBarLabel: "Saved",
+    tabBarIcon: ({ color, size }) => (
+      <Text style={{ color, fontSize: size }}>♥</Text>
+    ),
+  }}
+/>
 
       <Tab.Screen
         name="Profile"

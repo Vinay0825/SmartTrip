@@ -19,7 +19,8 @@
         {
           "locationWhenInUsePermission": "Allow SmartTrip to use your location to find nearby places and build your trip."
         }
-      ]
+      ],
+      "expo-splash-screen"
     ],
     "android": {
       "package": "com.smarttrip.app"

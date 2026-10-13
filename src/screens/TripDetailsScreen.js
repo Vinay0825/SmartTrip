@@ -10,9 +10,11 @@ import {
 
 import COLORS from "../constants/colors";
 
-import {
-  itinerary,
-} from "../data/mockData";
+const itinerary = [
+  { id: "1", time: "09:00 AM", title: "Visit local attractions", type: "Sightseeing" },
+  { id: "2", time: "12:00 PM", title: "Lunch at a nearby restaurant", type: "Food" },
+  { id: "3", time: "03:00 PM", title: "Explore popular places", type: "Activity" },
+];
 
 export default function TripDetailsScreen({
   route,
